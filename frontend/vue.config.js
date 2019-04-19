@@ -1,5 +1,8 @@
 // 'use strict'
+var path = require("path")
+
 module.exports = {
+	outputDir : path.resolve(__dirname, "../backend/public/"),
 	devServer: { 
 		proxy: { // proxyTable 설정
 			'/api': {
@@ -12,7 +15,3 @@ module.exports = {
 		}
 	}
 }
-
-
-// outputDir : path.resolve(__dirname, "../backend/public/"),
-// var path = require("path")
